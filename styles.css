@@ -1,0 +1,74 @@
+body {
+  /* Use a modern, easy-to-read font */
+  font-family: Arial, sans-serif;
+  /* Reset default margin and padding */
+  margin: 0;
+  padding: 0;
+  /* Center the main content */
+  background-color: #fcf7f7; /* Light gray background for the whole page */
+}
+
+main {
+  /* Limit the width of the main content on large screens */
+  max-width: 1200px;
+  /* Center the content horizontally */
+  margin: 20px auto; 
+  /* Add padding around the content */
+  padding: 20px;
+  /* White background for the main content area */
+  background-color: white; 
+  /* Subtle shadow for a "card" effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  /* Make the corners slightly rounded */
+  border-radius: 8px;
+}
+
+h1 {
+  /* Primary heading color */
+  color: #004d99; /* freeCodeCamp Blue */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  /* Add separation between video sections */
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  /* Secondary heading color */
+  color: #333;
+  border-left: 5px solid #ff9800; /* Orange accent line */
+  padding-left: 10px;
+  margin-top: 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* RESPONSIVENESS AND IFRAME STYLING */
+/* ---------------------------------------------------------------- */
+
+iframe {
+  /* Ensure the iframe scales to fill its container */
+  max-width: 100%;
+  /* Set display block to ensure proper spacing */
+  display: block; 
+  /* Add a border around the video */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Media Query for Mobile Devices (screens smaller than 600px) */
+@media (max-width: 600px) {
+  main {
+    /* Full width on small screens, remove side margins */
+    margin: 10px; 
+    padding: 10px;
+  }
+  
+  h1 {
+    /* Make the title slightly smaller on mobile */
+    font-size: 1.5em;
+  }
+}
